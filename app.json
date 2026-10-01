@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Pausa",
+    "slug": "pausa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "pausa",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F6F1EA",
+    "ios": {
+      "bundleIdentifier": "com.sastiazaran.pausa",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.sastiazaran.pausa",
+      "adaptiveIcon": {
+        "backgroundColor": "#F6F1EA",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F6F1EA",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 96
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#C45C6A"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
